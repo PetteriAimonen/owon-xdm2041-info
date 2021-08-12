@@ -37,23 +37,25 @@ TFT pin | MCU pin           |   Function
 14      |                   |   GND
 15      |                   |   Always high (Read Strobe?)
 16      | 21 / PB10         |   Write strobe, data is sampled on rising edge
-17      | 20 / PB2          |   Data/Command selector, high = data, low = command
+17      | 20 / PB2          |   Data/Command selector, high = data, low = command (*1*)
 18      | 19 / PB1          |   Chip select (active low)
 19      |                   |   RESET, Capacitor C2 + pull-up R6
 20      |                   |   GND
 21      |                   |   Backlight Anode (connected to +5V)
-22      | 34 / PA13         |   Backlight Cathode (*)
+22      | 34 / PA13         |   Backlight Cathode (*2*)
 23      |                   |   GND
 24      |                   |   GND
 
-(*) switched with transistor Q1 via R5 from PA13 (shared with SWDIO/JTMS!).
+(*1*) Shared with BOOT1, pulled-down via R7
+
+(*2*) switched with transistor Q1 via R5 from PA13 (shared with SWDIO/JTMS!).
 Can be driven with PWM without flicker, as C1 as connected across Pin 21 and 22.
 
 TFT init sequence is captured in [tft_init_sequence.txt](tft_init_sequence.txt).
 
 
-16-pin connector to analog board (U5, staggered pins, straight numbered)
-========================================================================
+16-pin connector to analog board (U5, numbered from left to right)
+===
 
 U5 pin	| MCU pin			|	Function
 --------|-------------------|------------
@@ -74,3 +76,21 @@ U5 pin	| MCU pin			|	Function
 15		|					|	n.c.
 16		|					|	n.c.
 
+
+6-pin USB / RS232 connector (U6)
+===
+
+U6 pin	| MCU pin			|	Function
+--------|-------------------|------------
+1		|					|	GND
+2		|					|	GND
+3		| 33 / PA12			|	USB D+ (*1*)
+4		| 30 / PA9			|	Serial TXD via R22
+5		| 32 / PA11			|	USB D- (*2*)
+6		| 31 / PA10			|	Serial RXD via R17
+
+(*1*) Originally pulled up to +5V via R12 (15k), should be changed to 1.5k and connected to +3.3V
+
+(*2*) Originally pulled up to +5V via R13, should be removed totally.
+
+(*3*) USB D+ and D- are reversed on the rear connector board, must be re-reversed...
