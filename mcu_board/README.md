@@ -35,16 +35,19 @@ TFT pin | MCU pin           |   Function
 12      | 16 / PA6          |   D6
 13      | 17 / PA7          |   D7
 14      |                   |   GND
-15      |                   |   Always high
+15      |                   |   Always high (Read Strobe?)
 16      | 21 / PB10         |   Write strobe, data is sampled on rising edge
 17      | 20 / PB2          |   Data/Command selector, high = data, low = command
 18      | 19 / PB1          |   Chip select (active low)
-19      |                   |   Capacitor C2 + pull-up R6
+19      |                   |   RESET, Capacitor C2 + pull-up R6
 20      |                   |   GND
-21      |                   |   Backlight?
-22      |                   |   Backlight?
+21      |                   |   Backlight Anode (connected to +5V)
+22      | 34 / PA13         |   Backlight Cathode (*)
 23      |                   |   GND
 24      |                   |   GND
+
+(*) switched with transistor Q1 via R5 from PA13 (shared with SWDIO/JTMS!).
+Can be driven with PWM without flicker, as C1 as connected across Pin 21 and 22.
 
 TFT init sequence is captured in [tft_init_sequence.txt](tft_init_sequence.txt).
 
