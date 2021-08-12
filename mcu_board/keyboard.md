@@ -10,3 +10,4 @@ R/C		| 40 / PB4	| 39 / PB3	| 38 / PA15	| 37 / PA14	| 2 / PC13
 45 / PB8| __DUAL EXIT__ | __DOWN__ | __UP__	| __RUN/ STOP__ | __CAP__
 46 / PB9| __TEMP__	| unused		| __RIGHT__	| __PORT__	| __FREQ__
 
+No pull-ups/downs or decoupling diodes are used
