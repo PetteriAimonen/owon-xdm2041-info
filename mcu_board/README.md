@@ -51,3 +51,26 @@ Can be driven with PWM without flicker, as C1 as connected across Pin 21 and 22.
 
 TFT init sequence is captured in [tft_init_sequence.txt](tft_init_sequence.txt).
 
+
+16-pin connector to analog board (U5, staggered pins, straight numbered)
+========================================================================
+
+U5 pin	| MCU pin			|	Function
+--------|-------------------|------------
+1		|					|	GND
+2		| 22 / PB11			|	SPI1 - nSS2 (74HC595 latch)
+3		|					|	GND
+4		|					|	GND
+5		|					|	+3.3V
+6		|					|	+3.3V
+7		|					|	n.c.
+8		| 28 / PB14			|	SPI1 - MISO
+9		|					|	n.c.
+10		| 27 / PB15			|	SPI1 - MOSI
+11		|					|	n.c.
+12		| 26 / PB13			|	SPI1 - SCK
+13		|					|	n.c.
+14		| 25 / PB12			|	SPI1 - nSS (HY3131 SPI)
+15		|					|	n.c.
+16		|					|	n.c.
+
