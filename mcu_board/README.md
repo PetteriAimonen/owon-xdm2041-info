@@ -41,7 +41,7 @@ TFT pin | MCU pin           |   Function
 18      | 19 / PB1          |   Chip select (active low)
 19      |                   |   RESET, Capacitor C2 + pull-up R6
 20      |                   |   GND
-21      |                   |   Backlight Anode (connected to +5V)
+21      |                   |   Backlight Anode (connected to +5V via R2//R3 = 12.5 Ohm)
 22      | 34 / PA13         |   Backlight Cathode (*2*)
 23      |                   |   GND
 24      |                   |   GND
