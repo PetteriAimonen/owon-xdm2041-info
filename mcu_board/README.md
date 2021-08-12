@@ -95,4 +95,4 @@ U6 pin	| MCU pin			|	Function
 
 (*3*) USB D+ and D- are reversed on the rear connector board, must be re-reversed...
 
-USB lines are protected with a [TPD2E001 Transient Voltage Suppressor](https://www.ti.com/lit/ds/symlink/tpd2e001.pdf).
+USB lines are protected with a [TPD2E001 Transient Voltage Suppressor](https://www.ti.com/lit/ds/symlink/tpd2e001.pdf) (U10).
