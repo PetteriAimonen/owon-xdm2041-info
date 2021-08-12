@@ -94,3 +94,5 @@ U6 pin	| MCU pin			|	Function
 (*2*) Originally pulled up to +5V via R13, should be removed totally.
 
 (*3*) USB D+ and D- are reversed on the rear connector board, must be re-reversed...
+
+USB lines are protected with a TPD2E001 Transient Voltage Suppressor.
