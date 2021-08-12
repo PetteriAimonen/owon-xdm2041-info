@@ -64,9 +64,9 @@ U5 pin	| MCU pin			|	Function
 5		|					|	+3.3V
 6		|					|	+3.3V
 7		|					|	n.c.
-8		| 28 / PB14			|	SPI1 - MISO
+8		| 27 / PB14			|	SPI1 - MISO
 9		|					|	n.c.
-10		| 27 / PB15			|	SPI1 - MOSI
+10		| 28 / PB15			|	SPI1 - MOSI
 11		|					|	n.c.
 12		| 26 / PB13			|	SPI1 - SCK
 13		|					|	n.c.
