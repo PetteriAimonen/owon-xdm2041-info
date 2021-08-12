@@ -25,7 +25,7 @@ TFT pin | MCU pin           |   Function
 2       |                   |   +3.3V
 3       |                   |   +3.3V
 4       |                   |   GND
-5       |                   |   Probably floating
+5       | ~~18 / PB0~~      |   Floating (IRQ? via unpopulated R1)
 6       | 10 / PA0          |   D0
 7       | 11 / PA1          |   D1
 8       | 12 / PA2          |   D2
