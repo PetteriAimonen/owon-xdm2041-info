@@ -7,9 +7,9 @@ The XDM2041 MCU board contains:
 * 12 MHz crystal
 * 32 kHz crystal
 * RTC backup battery
-* Beeper
+* Beeper (connected to MCU pin 29 / PA8 via R11 and Q2)
 * 3.3V linear regulator
-* Membrane keyboard
+* Membrane keyboard ([layout](keyboard.md))
 * Level translator for RS232
 * 24-pin TFT connector
 * 16-pin ADC connector
