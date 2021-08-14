@@ -1,0 +1,315 @@
+9124745 HY3131: MOSI transfers: 3C 00                        # Write INTF
+
+9171457 HY3131: MOSI transfers: 41 FF                        # Read R20
+9171457 HY3131: MISO transfers: FF 80
+
+9224291 HY3131: MOSI transfers: 40 E8                        # Write R20
+
+# Bulk write of all registers
+10644273 HY3131: MOSI transfers: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 00 14 8B 01 11 00 15 31 00 20 00 00 90 28 20 80 C7 33 A8 00 00 00 00
+
+10658793 74HC595: MOSI transfers: 31
+
+10703333 HY3131: MOSI transfers: 41 FF                       # Read R20
+10703333 HY3131: MISO transfers: 00 60
+
+10756174 HY3131: MOSI transfers: 40 48                       # Write R20
+
+# Bulk write of all registers
+12176042 HY3131: MOSI transfers: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 00 14 8B 85 11 00 15 31 00 00 00 00 00 08 01 80 C7 33 AA 00 00 00 00
+
+30933280 74HC595: MOSI transfers: 11
+
+30977827 HY3131: MOSI transfers: 3D FF                       # Read INTF
+30977827 HY3131: MISO transfers: 00 02
+
+31057871 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+31057871 HY3131: MISO transfers: 00 48 14 7B
+
+31104720 HY3131: MOSI transfers: 41 FF                       # Read R20
+31104720 HY3131: MISO transfers: 00 60
+
+31157563 HY3131: MOSI transfers: 40 48                       # Write R20
+
+32577412 HY3131: MOSI transfers: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 00 14 8B 85 11 00 15 31 00 00 00 00 00 08 01 80 C7 33 AB 00 00 00 00
+
+51334649 74HC595: MOSI transfers: 11
+
+51379197 HY3131: MOSI transfers: 3D FF                       # Read INTF
+51379197 HY3131: MISO transfers: 00 02
+
+51459216 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+51459216 HY3131: MISO transfers: 00 43 F5 04
+
+51506247 HY3131: MOSI transfers: 41 FF                       # Read R20
+51506247 HY3131: MISO transfers: FF E0
+
+51559089 HY3131: MOSI transfers: 40 E8                       # Write R20
+
+52978934 HY3131: MOSI transfers: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 00 14 8B 85 11 00 15 31 00 00 00 00 00 08 01 80 C7 33 A8 00 00 00 00
+
+52993285 74HC595: MOSI transfers: 11
+
+54411119 HY3131: MOSI transfers: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 00 14 8B 85 11 00 15 31 00 00 00 00 00 08 81 80 C7 33 A8 00 00 00 00
+
+54457785 HY3131: MOSI transfers: 41 FF                       # Read R20
+54457785 HY3131: MISO transfers: 00 60
+
+54510616 HY3131: MOSI transfers: 40 E8                       # Write R20
+
+55930626 HY3131: MOSI transfers: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 00 14 8B 01 11 00 15 31 00 20 00 00 90 28 A0 80 C7 33 A8 00 00 00 00
+
+68341352 74HC595: MOSI transfers: 31 31
+
+68385915 HY3131: MOSI transfers: 3D FF                       # Read INTF
+68385915 HY3131: MISO transfers: 00 02
+
+68465845 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+68465845 HY3131: MISO transfers: 00 3F 7F FF
+
+68512986 HY3131: MOSI transfers: 41 FF                       # Read R20
+68512986 HY3131: MISO transfers: FF E0
+
+68565798 HY3131: MOSI transfers: 40 00                       # Write R20
+
+69985818 HY3131: MOSI transfers: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 00 14 8B 35 11 00 15 31 00 00 00 00 00 08 81 80 C7 3C A8 00 00 00 00
+
+74398894 74HC595: MOSI transfers: 11 11
+74443433 HY3131: MISO transfers: 00 02
+74443433 HY3131: MOSI transfers: 3D FF                       # Read INTF
+74523468 HY3131: MISO transfers: 00 67 4D FF
+74523468 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+75341636 74HC595: MISO transfers: 00
+75341636 74HC595: MOSI transfers: 11
+75386191 HY3131: MISO transfers: FF 82
+75386191 HY3131: MOSI transfers: 3D FF                       # Read INTF
+75466222 HY3131: MISO transfers: 00 64 CD 7F
+75466222 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+75481279 74HC595: MISO transfers: 00
+75481279 74HC595: MOSI transfers: 11
+75525858 HY3131: MISO transfers: FF 80
+75525858 HY3131: MOSI transfers: 3D FF                       # Read INTF
+75838470 74HC595: MISO transfers: 00
+75838470 74HC595: MOSI transfers: 11
+75883009 HY3131: MISO transfers: 00 02
+75883009 HY3131: MOSI transfers: 3D FF                       # Read INTF
+75963040 HY3131: MISO transfers: 00 1A 54 7F
+75963040 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+76318352 74HC595: MISO transfers: 00
+76318352 74HC595: MOSI transfers: 11
+76362891 HY3131: MISO transfers: FF 80
+76362891 HY3131: MOSI transfers: 3D FF                       # Read INTF
+76798189 74HC595: MISO transfers: 00
+76798189 74HC595: MOSI transfers: 11
+76842728 HY3131: MISO transfers: 00 02
+76842728 HY3131: MOSI transfers: 3D FF                       # Read INTF
+76922759 HY3131: MISO transfers: 00 28 D7 7F
+76922759 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+77340849 74HC595: MISO transfers: 00
+77340849 74HC595: MOSI transfers: 11
+77385403 HY3131: MISO transfers: FF 82
+77385403 HY3131: MOSI transfers: 3D FF                       # Read INTF
+77465434 HY3131: MISO transfers: 00 68 51 FF
+77465434 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+77757928 74HC595: MISO transfers: 00
+77757928 74HC595: MOSI transfers: 11
+77802467 HY3131: MISO transfers: FF 82
+77802467 HY3131: MOSI transfers: 3D FF                       # Read INTF
+77882498 HY3131: MISO transfers: 00 41 D0 FF
+77882498 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+78237775 74HC595: MISO transfers: 00
+78237775 74HC595: MOSI transfers: 11
+78282313 HY3131: MISO transfers: FF 80
+78282313 HY3131: MOSI transfers: 3D FF                       # Read INTF
+78717650 74HC595: MISO transfers: 00
+78717650 74HC595: MOSI transfers: 11
+78762188 HY3131: MISO transfers: 00 02
+78762188 HY3131: MOSI transfers: 3D FF                       # Read INTF
+78842219 HY3131: MISO transfers: 00 31 CF 7F
+78842219 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+79197502 74HC595: MISO transfers: 00
+79197502 74HC595: MOSI transfers: 11
+79242041 HY3131: MISO transfers: FF 82
+79242041 HY3131: MOSI transfers: 3D FF                       # Read INTF
+79322072 HY3131: MISO transfers: 00 65 CB FF
+79322072 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+80139891 74HC595: MISO transfers: 00
+80139891 74HC595: MOSI transfers: 11
+80184445 HY3131: MISO transfers: FF 82
+80184445 HY3131: MOSI transfers: 3D FF                       # Read INTF
+80264477 HY3131: MISO transfers: 00 20 D3 7F
+80264477 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+80279533 74HC595: MISO transfers: 00
+80279533 74HC595: MOSI transfers: 11
+80324112 HY3131: MISO transfers: FF 80
+80324112 HY3131: MOSI transfers: 3D FF                       # Read INTF
+80637077 74HC595: MISO transfers: 00
+80637077 74HC595: MOSI transfers: 11
+80681616 HY3131: MISO transfers: 00 02
+80681616 HY3131: MOSI transfers: 3D FF                       # Read INTF
+80761647 HY3131: MISO transfers: 00 2E 51 FF
+80761647 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+81116928 74HC595: MISO transfers: 00
+81116928 74HC595: MOSI transfers: 11
+81161466 HY3131: MISO transfers: FF 82
+81161466 HY3131: MOSI transfers: 3D FF                       # Read INTF
+81241497 HY3131: MISO transfers: 00 08 4E 7F
+81241497 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+81596809 74HC595: MISO transfers: 00
+81596809 74HC595: MOSI transfers: 11
+81641347 HY3131: MISO transfers: FF 80
+81641347 HY3131: MOSI transfers: 3D FF                       # Read INTF
+82139452 74HC595: MISO transfers: 00
+82139452 74HC595: MOSI transfers: 11
+82184006 HY3131: MISO transfers: 00 02
+82184006 HY3131: MOSI transfers: 3D FF                       # Read INTF
+82264037 HY3131: MISO transfers: 00 5B 51 FF
+82264037 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+82556500 74HC595: MISO transfers: 00
+82556500 74HC595: MOSI transfers: 11
+82601039 HY3131: MISO transfers: FF 82
+82601039 HY3131: MOSI transfers: 3D FF                       # Read INTF
+82681070 HY3131: MISO transfers: 00 38 50 FF
+82681070 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+83036376 74HC595: MISO transfers: 00
+83036376 74HC595: MOSI transfers: 11
+83080915 HY3131: MISO transfers: FF 82
+83080915 HY3131: MOSI transfers: 3D FF                       # Read INTF
+83160947 HY3131: MISO transfers: 00 04 D2 7F
+83160947 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+83733952 74HC595: MISO transfers: 00
+83733952 74HC595: MOSI transfers: 11
+83778532 HY3131: MISO transfers: FF 82
+83778532 HY3131: MOSI transfers: 3D FF                       # Read INTF
+83858563 HY3131: MISO transfers: 00 12 52 FF
+83858563 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+83996098 74HC595: MISO transfers: 00
+83996098 74HC595: MOSI transfers: 11
+84040638 HY3131: MISO transfers: FF 80
+84040638 HY3131: MOSI transfers: 3D FF                       # Read INTF
+84538747 74HC595: MISO transfers: 00
+84538747 74HC595: MOSI transfers: 11
+84583301 HY3131: MISO transfers: 00 02
+84583301 HY3131: MOSI transfers: 3D FF                       # Read INTF
+84663331 HY3131: MISO transfers: 00 54 D2 7F
+84663331 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+84955795 74HC595: MISO transfers: 00
+84955795 74HC595: MOSI transfers: 11
+85000334 HY3131: MISO transfers: FF 82
+85000334 HY3131: MOSI transfers: 3D FF                       # Read INTF
+85080365 HY3131: MISO transfers: 00 71 CF FF
+85080365 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+85435679 74HC595: MISO transfers: 00
+85435679 74HC595: MOSI transfers: 11
+85480217 HY3131: MISO transfers: FF 80
+85480217 HY3131: MOSI transfers: 3D FF                       # Read INTF
+85915523 74HC595: MISO transfers: 00
+85915523 74HC595: MOSI transfers: 11
+85960062 HY3131: MISO transfers: 00 02
+85960062 HY3131: MOSI transfers: 3D FF                       # Read INTF
+86040093 HY3131: MISO transfers: 00 30 D4 7F
+86040093 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+86395371 74HC595: MISO transfers: 00
+86395371 74HC595: MOSI transfers: 11
+86439914 HY3131: MISO transfers: FF 82
+86439914 HY3131: MOSI transfers: 3D FF                       # Read INTF
+86519945 HY3131: MISO transfers: 00 2C 5D 7F
+86519945 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+86938025 74HC595: MISO transfers: 00
+86938025 74HC595: MOSI transfers: 11
+86982579 HY3131: MISO transfers: FF 82
+86982579 HY3131: MOSI transfers: 3D FF                       # Read INTF
+87062609 HY3131: MISO transfers: 00 73 5A FF
+87062609 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+87355103 74HC595: MISO transfers: 00
+87355103 74HC595: MOSI transfers: 11
+87399642 HY3131: MISO transfers: FF 80
+87399642 HY3131: MOSI transfers: 3D FF                       # Read INTF
+87834982 74HC595: MISO transfers: 00
+87834982 74HC595: MOSI transfers: 11
+87879521 HY3131: MISO transfers: 00 02
+87879521 HY3131: MOSI transfers: 3D FF                       # Read INTF
+87959551 HY3131: MISO transfers: 00 56 D5 7F
+87959551 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+88532958 74HC595: MISO transfers: 00
+88532958 74HC595: MOSI transfers: 11
+88577537 HY3131: MISO transfers: FF 82
+88577537 HY3131: MOSI transfers: 3D FF                       # Read INTF
+88657569 HY3131: MISO transfers: 00 40 D3 FF
+88657569 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+88794681 74HC595: MISO transfers: 00
+88794681 74HC595: MOSI transfers: 11
+88839220 HY3131: MISO transfers: FF 80
+88839220 HY3131: MOSI transfers: 3D FF                       # Read INTF
+89337331 74HC595: MISO transfers: 00
+89337331 74HC595: MOSI transfers: 11
+89381885 HY3131: MISO transfers: 00 02
+89381885 HY3131: MOSI transfers: 3D FF                       # Read INTF
+89461915 HY3131: MISO transfers: 00 1C CE FF
+89461915 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+89754409 74HC595: MISO transfers: 00
+89754409 74HC595: MOSI transfers: 11
+89798948 HY3131: MISO transfers: FF 82
+89798948 HY3131: MOSI transfers: 3D FF                       # Read INTF
+89878978 HY3131: MISO transfers: 00 20 D2 7F
+89878978 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+90234256 74HC595: MISO transfers: 00
+90234256 74HC595: MOSI transfers: 11
+90278795 HY3131: MISO transfers: FF 82
+90278795 HY3131: MOSI transfers: 3D FF                       # Read INTF
+90358825 HY3131: MISO transfers: 00 64 D7 FF
+90358825 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+90714135 74HC595: MISO transfers: 00
+90714135 74HC595: MOSI transfers: 11
+90758674 HY3131: MISO transfers: FF 80
+90758674 HY3131: MOSI transfers: 3D FF                       # Read INTF
+91193977 74HC595: MISO transfers: 00
+91193977 74HC595: MOSI transfers: 11
+91238516 HY3131: MISO transfers: 00 02
+91238516 HY3131: MOSI transfers: 3D FF                       # Read INTF
+91318547 HY3131: MISO transfers: 00 55 D3 FF
+91318547 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+91736645 74HC595: MISO transfers: 00
+91736645 74HC595: MOSI transfers: 11
+91781198 HY3131: MISO transfers: FF 82
+91781198 HY3131: MOSI transfers: 3D FF                       # Read INTF
+91861229 HY3131: MISO transfers: 00 46 54 FF
+91861229 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+92153684 74HC595: MISO transfers: 00
+92153684 74HC595: MOSI transfers: 11
+92198224 HY3131: MISO transfers: FF 82
+92198224 HY3131: MOSI transfers: 3D FF                       # Read INTF
+92278259 HY3131: MISO transfers: 00 48 D8 FF
+92278259 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+92633572 74HC595: MISO transfers: 00
+92633572 74HC595: MOSI transfers: 11
+92678111 HY3131: MISO transfers: FF 80
+92678111 HY3131: MOSI transfers: 3D FF                       # Read INTF
+93331527 74HC595: MISO transfers: 00
+93331527 74HC595: MOSI transfers: 11
+93376110 HY3131: MISO transfers: 00 02
+93376110 HY3131: MOSI transfers: 3D FF                       # Read INTF
+93456142 HY3131: MISO transfers: 00 25 DD 7F
+93456142 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+93593289 74HC595: MISO transfers: 00
+93593289 74HC595: MOSI transfers: 11
+93637829 HY3131: MISO transfers: FF 82
+93637829 HY3131: MOSI transfers: 3D FF                       # Read INTF
+93717861 HY3131: MISO transfers: 00 25 DD 7F
+93717861 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+94135911 74HC595: MISO transfers: 00
+94135911 74HC595: MOSI transfers: 11
+94180465 HY3131: MISO transfers: FF 82
+94180465 HY3131: MOSI transfers: 3D FF                       # Read INTF
+94260496 HY3131: MISO transfers: 00 27 E0 7F
+94260496 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
+94552991 74HC595: MISO transfers: 00
+94552991 74HC595: MOSI transfers: 11
+94597530 HY3131: MISO transfers: FF 80
+94597530 HY3131: MOSI transfers: 3D FF                       # Read INTF
+95032837 74HC595: MISO transfers: 00
+95032837 74HC595: MOSI transfers: 11
+95077377 HY3131: MISO transfers: 00 02
+95077377 HY3131: MOSI transfers: 3D FF                       # Read INTF
+95157411 HY3131: MISO transfers: 00 4C 5B FF
+95157411 HY3131: MOSI transfers: 01 FF FF FF                 # Read AD1_DATA
