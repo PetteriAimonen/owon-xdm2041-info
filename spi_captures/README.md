@@ -5,6 +5,7 @@ The SPI clock frequency is 2.6 kHz.
 
 * [boot.txt](boot.txt): Initial power-on.
 * [all_modes.txt](all_modes.txt): Activating each measurement mode in turn with SCPI commands. There may be some problems here because the SCPI interface does not seem to always behave reliably.
+* [measurement_modes.md](measurement_modes.md): Decoded info on how specific measurement modes work.
 
 
 Considerations for max clock rate
