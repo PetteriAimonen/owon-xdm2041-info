@@ -96,3 +96,21 @@ U6 pin	| MCU pin			|	Function
 (*3*) USB D+ and D- are reversed on the rear connector board, must be re-reversed...
 
 USB lines are protected with a [TPD2E001 Transient Voltage Suppressor](https://www.ti.com/lit/ds/symlink/tpd2e001.pdf) (U10).
+
+6-pin bootloader pinheader (CO2)
+================================
+
+When PCB is held upright, pin 1 is on the left side closest to the large screw hole in the PCB.
+
+CO2 pin | MCU pin          | Function
+--------|------------------|----------
+1       | 31/PA10 thru R22 | USART0_RX
+2       | 30/PA9 thru R17  | USART0_TX
+3       |                  |
+4       | 44/BOOT0         | High level activates bootloader
+5       |                  | GND
+6       |                  | 3.3V supply
+
+A button can be connected between 3.3V and BOOT0, and holding it down on power-on will activate the built-in serial bootloader that can be used with e.g. [stm32flash](https://github.com/stm32duino/stm32flash).
+It seems the RS232 level translator overrides the RX pin on this connector if +5V is provided, so flashing through the backpanel RS232 port is better.
+
