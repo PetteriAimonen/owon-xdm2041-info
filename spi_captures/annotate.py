@@ -1,5 +1,5 @@
 # Usage:
-# (grep 'transfers:..' hy3131.txt | sed 's/SPI/HY3131/' | cut -d '-' -f 2- | python annotate.py ; grep 'MOSI transfers:..' 74hc595.txt | sed 's/SPI/74HC595/' | cut -d '-' -f 2-; grep 'RX data' uart.txt | grep -v 'bit' | grep -v '0D' | cut -d'-' -f 2- | sed 's/RX data: .0A./ /' | sed 's/.* RX data: //' | sed 's/\(...\)/|\1/' | tr -d '\n' | tr '|' '\n') | sort -g > all_modes.txt
+# (grep 'transfers:..' hy3131.txt | sed 's/SPI/HY3131/' | cut -d '-' -f 2- | python annotate.py ; grep 'MOSI transfers:..' 74hc595.txt | sed 's/SPI/74HC595/' | cut -d '-' -f 2-; grep 'RX data' uart.txt | python annotate_uart.py) | sort -g > all_modes.txt
 
 import sys
 

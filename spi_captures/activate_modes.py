@@ -39,9 +39,12 @@ CONF:RES 500E3
 CONF:RES 5E6
 CONF:RES 50E6
 
-CONF:FRES 500
-CONF:FRES 5E3
-CONF:FRES 50E3
+CONF:RES 500
+CONF:FRES
+CONF:RES 5E3
+CONF:FRES
+CONF:RES 50E3
+CONF:FRES
 
 CONF:CONT
 
@@ -62,9 +65,13 @@ CONF:TEMP:RTD PT100
 '''
 
 for line in cmds.split('\n'):
-    print(line)
-    port.write(line.encode('ascii') + b'\r\n')
-    time.sleep(3.0)
+    line = line.strip()
+    if line:
+        print(line)
+        
+        port.write(line.encode('ascii') + b'\r\n')
+        port.flush()
+        time.sleep(3.0)
 
 
 
