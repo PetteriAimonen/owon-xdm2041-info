@@ -24,10 +24,10 @@ is needed. FT2232H or FT232H based adapter is recommended, though there are
 some reports of success with ST-Link also.
 
 A modified version of OpenOCD is needed so that it does not automatically set the `C_DEBUGEN` bit that blocks the flash.
-It is available from [https://github.com/PetteriAimonen/openocd/tree/hack_no_C_DEBUGEN](here).
+It is available from [here](https://github.com/PetteriAimonen/openocd/tree/hack_no_C_DEBUGEN).
 
 Connect the debugger to SWDIO and SWCLK pins on the microcontroller.
-If using a bare FT232H breakout board, an external resistor is needed as described [https://github.com/unprovable/FTDI-Oh-My/blob/master/FT232H-JTAG-SWD.txt](here).
+If using a bare FT232H breakout board, an external resistor is needed as described [here](https://github.com/unprovable/FTDI-Oh-My/blob/master/FT232H-JTAG-SWD.txt).
 
 This command should read out the flash and write it out to files under `/tmp/`:
 
