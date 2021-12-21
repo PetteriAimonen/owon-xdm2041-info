@@ -14,6 +14,13 @@ The protection can be disabled, but it will also erase the flash.
 The factory calibration information is stored in the last 2 kB of the flash
 memory, so it has to be saved before erasing the device.
 
+Trying through serial port
+--------------------------
+
+The OWON XDM2041 appears to have an internal bootloader that is entered by command `INT:DOWNLOAD`.
+It writes bootloader enable to flash and will stay at empty progressbar on every boot after that.
+To exit the bootloader, write `\r\n\r\n` to the serial port.
+
 Reading out flash memory
 ------------------------
 
@@ -25,6 +32,8 @@ some reports of success with ST-Link also.
 
 A modified version of OpenOCD is needed so that it does not automatically set the `C_DEBUGEN` bit that blocks the flash.
 It is available from [here](https://github.com/PetteriAimonen/openocd/tree/hack_no_C_DEBUGEN).
+
+It may be necessary to pull BOOT0 pin high to be able to get connection to debugger.
 
 Connect the debugger to SWDIO and SWCLK pins on the microcontroller.
 If using a bare FT232H breakout board, an external resistor is needed as described [here](https://github.com/unprovable/FTDI-Oh-My/blob/master/FT232H-JTAG-SWD.txt).
