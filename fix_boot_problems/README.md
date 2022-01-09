@@ -14,12 +14,17 @@ The protection can be disabled, but it will also erase the flash.
 The factory calibration information is stored in the last 2 kB of the flash
 memory, so it has to be saved before erasing the device.
 
-Trying through serial port
---------------------------
+Trying if it just needs bootloader exit
+---------------------------------------
 
 The OWON XDM2041 appears to have an internal bootloader that is entered by command `INT:DOWNLOAD`.
 It writes bootloader enable to flash and will stay at empty progressbar on every boot after that.
 To exit the bootloader, write `\r\n\r\n` to the serial port.
+
+Trying to flash firmware through bootloader
+-------------------------------------------
+
+Main firmware can be rewritten without destroying calibration data by using the bootloader. See [bootloader folder](../bootloader).
 
 Reading out flash memory
 ------------------------
