@@ -2,7 +2,8 @@ Owon XDM-2041 firmware memory map
 =================================
 
 * `0x0000` to `0x27FF` (10 kB): Bootloader
-* `0x2800` to `0x1F7FF` (116 kB): Main code
+* `0x2800` to `0x1F5FF` (114 kB): Main code
+* `0x1F600` to `0x1F7FF` (2 kB): Unknown, handled separately by bootloader
 * `0x1F800` to `0x1FFFF` (2 kB): Calibration area
 
 Calibration area map
