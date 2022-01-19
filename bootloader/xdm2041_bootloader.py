@@ -30,7 +30,17 @@ while True:
         break
 
 print("Bootloader active!")
-port.timeout = 10.0
+
+def wait7():
+    start = time.time()
+    while time.time() - start < 10:
+        if b'7' in port.read(16):
+           return
+        sys.stdout.write('.')
+        sys.stdout.flush()
+        time.sleep(0.1)
+    else:
+        raise Exception("ACK not received within 10 sec")
 
 packsize = 10240
 packcount = math.ceil(len(bindata) / float(packsize))
@@ -38,14 +48,10 @@ print("Will send %d packs of 10kB to area 5" % packcount)
 print("Erasing flash..")
 
 port.write(b'\x05')
-if b'7' not in port.read(16):
-    sys.stderr.write("ERROR: No acknowledge to write area\n")
-    sys.exit(2)
+wait7()
 
 port.write(struct.pack('b', packcount))
-if b'7' not in port.read(16):
-    sys.stderr.write("ERROR: No acknowledge to pack count\n")
-    sys.exit(3)
+wait7()
 
 for pack in range(packcount):
     print("Writing pack %d/%d" % (pack + 1, packcount))
@@ -53,18 +59,7 @@ for pack in range(packcount):
     part = bindata[pack * packsize : (pack + 1) * packsize]
     port.write(part)
     
-    if b'7' not in port.read(16):
-        sys.stderr.write("ERROR: No acknowledge to pack write %d\n" % (pack + 1))
-        sys.exit(4)
+    wait7()
 
 print("Exiting bootloader..")
 port.write(b'\x14')
-
-port.timeout=1.0
-port.read()
-time.sleep(10)
-port.write(b'*IDN?\r\n')
-response = port.read(1024)
-
-print("All done, SCPI IDN response: " + repr(response))
-
