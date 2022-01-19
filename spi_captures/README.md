@@ -17,5 +17,16 @@ The observed delay is 50 microseconds.
 
 The original firmware runs SPI in CPHA = 0, CPOL = 0 mode, where slave
 writes on falling edge and master reads on rising edge.
-Possibly CPHA = 1, CPOL = 1 could work, because then the master would read only
-on the following falling edge, giving twice the time for signal to settle.
+The clock rate is so slow that the SPI has to be bitbanged, the SPI peripheral
+cannot be clocked slow enough.
+When bit banging, the MISO reading can be delayed to the next falling edge,
+making 10 or 20 kHz SPI clock rate possible.
+
+The image below is measured at ADC board on the connector going to MCU board:
+
+![](spi_waveform.png)
+
+The spikes can be eliminated by setting microcontroller pins to 2 MHz mode:
+
+![](own_firmware.png)
+
