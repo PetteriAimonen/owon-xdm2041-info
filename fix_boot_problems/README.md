@@ -14,20 +14,30 @@ The protection can be disabled, but it will also erase the flash.
 The factory calibration information is stored in the last 2 kB of the flash
 memory, so it has to be saved before erasing the device.
 
-Trying if it just needs bootloader exit
----------------------------------------
+Simple method: Trying if it just needs bootloader exit
+------------------------------------------------------
 
 The OWON XDM2041 appears to have an internal bootloader that is entered by command `INT:DOWNLOAD`.
 It writes bootloader enable to flash and will stay at empty progressbar on every boot after that.
-To exit the bootloader, write `\r\n\r\n` to the serial port.
+To exit the bootloader, write `\r\n\r\n` to the serial port at 115200 bps.
 
-Trying to flash firmware through bootloader
--------------------------------------------
+Intermediate method: Trying to flash firmware through bootloader
+----------------------------------------------------------------
 
 Main firmware can be rewritten without destroying calibration data by using the bootloader. See [bootloader folder](../bootloader).
 
-Reading out flash memory
-------------------------
+1. Install Python 3. On Windows you may need to type `py` instead of `python` below.
+2. Install pyserial: `python -m pip install pyserial`
+3. Upload firmware: `python xdm2041_bootloader.py COMx XDM2041.bin`
+
+
+Complex method: Reading out flash memory
+----------------------------------------
+
+**NOTE: This was the original method first discovered to restore these devices. The bootloader method described above doesn't need opening the device and is easier.**
+
+If all else fails, one can open up the multimeter and solder in wires to connect a SWD-based debugger attachment.
+The XDM2041 is also readout protected so this gets pretty complex.
 
 This method to defeat the read-protection is based on work by [Johannes Obermaier](https://github.com/JohannesObermaier/f103-analysis).
 
@@ -49,5 +59,4 @@ This command should read out the flash and write it out to files under `/tmp/`:
 
 After that, the files can be combined and the last 2 kB can be taken and combined with a working firmware file, available [here](https://jpa.kapsi.fi/stuff/other/owon_xdm2041_firmware.bin).
 
-**NOTE: This process is very much work-in-progress and while it has worked for several people already, it is not very easy to use.**
 
