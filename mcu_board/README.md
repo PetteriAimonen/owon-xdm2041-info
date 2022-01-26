@@ -111,6 +111,10 @@ CO2 pin | MCU pin          | Function
 5       |                  | GND
 6       |                  | 3.3V supply
 
-A button can be connected between 3.3V and BOOT0, and holding it down on power-on will activate the built-in serial bootloader that can be used with e.g. [stm32flash](https://github.com/stm32duino/stm32flash).
+~~A button can be connected between 3.3V and BOOT0, and holding it down on power-on will activate the built-in GD32 serial bootloader that can be used with e.g. [stm32flash](https://github.com/stm32duino/stm32flash).~~
+Using the custom Owon bootloader with scripts in [bootloader folder](../bootloader) is easier and requires no modifications.
+
 It seems the RS232 level translator overrides the RX pin on this connector if +5V is provided, so flashing through the backpanel RS232 port is better.
+
+
 
